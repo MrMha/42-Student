@@ -6,23 +6,13 @@
 /*   By: musali <musali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 15:27:28 by musali            #+#    #+#             */
-/*   Updated: 2022/10/02 20:44:53 by musali           ###   ########.fr       */
+/*   Updated: 2022/10/28 20:47:22 by musali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
-	char	*p;
-
-	i = 0;
-	p = (char *)s;
-	while (p[i] && i < n)
-	{
-		p[i] = '\0';
-		i++;
-	}
-	return (p);
+	ft_memset(s, 0, n);
 }

@@ -6,7 +6,7 @@
 /*   By: musali <musali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 15:11:45 by musali            #+#    #+#             */
-/*   Updated: 2022/10/02 20:43:36 by musali           ###   ########.fr       */
+/*   Updated: 2022/10/14 18:48:23 by musali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	p = (char *)s;
+	if (p[i] == c)
+		return (&p[i]);
 	while (p[i] != c && p[i] != '\0')
 	{
 		i++;
 		if (p[i] == c)
-		{
 			return (&p[i]);
-		}
 	}
 	return (0);
 }

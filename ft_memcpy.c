@@ -6,15 +6,15 @@
 /*   By: musali <musali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 18:26:06 by musali            #+#    #+#             */
-/*   Updated: 2022/10/02 20:45:41 by musali           ###   ########.fr       */
+/*   Updated: 2022/10/07 20:11:34 by musali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, int n)
+void	*ft_memcpy(void *dst, const void *src, int n)
 {
-	size_t	i;
+	int		i;
 	char	*s;
 	char	*r;
 

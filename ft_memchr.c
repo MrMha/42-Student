@@ -6,26 +6,25 @@
 /*   By: musali <musali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 18:46:06 by musali            #+#    #+#             */
-/*   Updated: 2022/10/02 20:43:51 by musali           ###   ########.fr       */
+/*   Updated: 2022/10/07 19:59:13 by musali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *c, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int		a;
-	int		b;
+	size_t	a;
 	char	*p;
 
-	p = (char *)c;
+	p = (char *)s;
 	a = 0;
-	while (p[i] != c && p[i])
+	while (a < n)
 	{
-		i++;
-		if (p[i] == c)
+		a++;
+		if (p[a] == c)
 		{
-			return (&p[i]);
+			return (&p[a]);
 		}
 	}
 	return (0);
