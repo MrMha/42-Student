@@ -6,7 +6,7 @@
 /*   By: musali <musali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 16:42:25 by musali            #+#    #+#             */
-/*   Updated: 2022/11/02 18:59:59 by musali           ###   ########.fr       */
+/*   Updated: 2022/11/03 13:49:02 by musali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 
 char	*ft_strtrim(char const *s1, char const *set);
+
+char	**ft_split(char const *s, char c);
 
 #endif
